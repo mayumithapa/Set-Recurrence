@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Recurrence</title>
+    <link rel="stylesheet" href="setRec.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div>
+            <h1>Set recurrence</h1>
+        </div>
+
+        <!-- Grid Start-->
+        <div class="grid-container">
+            <div style="display: flex; justify-content: end; align-items: center; padding-right: 4px;">Start</div>
+            <div><input id="startDateInput" type="date"></div>
+            <div style="display: flex; justify-content: end; align-items: center; padding-right: 4px;">Repeat every</div>
+
+            <div><input type="number" id="inputNum" min="1" max="31" style="width: 30px;"> <!-- min max not working here -->
+                
+                <select id="select-month-week">
+                    <option id="week" value="week">Week</option>
+                    <option id="month" value="month">Month</option>
+                </select></div>
+
+            <div id="combinedDiv"></div> 
+            <div id="weekToMonth">
+                <button class="days" id="Monday">M</button> 
+                <button class="days" id="Tuesday">T</button>
+                <button class="days" id="Wednesday">W</button>
+                <button class="days" id="Thursday">T</button>
+                <button class="days" id="Friday">F</button>
+                <button class="days" id="Saturday">S</button>
+                <button class="days" id="Sunday">S</button>
+            </div>
+            <div id="monthRadioButtons" hidden>
+
+        
+                <!-- input 1 -->
+                <label for="radio1">
+                <div class="box" id="box1" style="display: flex; align-items: center;">
+                    <input type="radio" id="radio1" name="group1" style="margin-right: 10px; margin-bottom: 10px;" >On day
+                    <label for="radio1"><input disabled type="number" for="radio1" id="inputNumMonth" min="1" max="31" style="width: 30px; margin-left: 10px;"></label>
+                </div></label>
+                
+                <!-- input 2 -->
+                <label for="radio2">
+                <div class="box" id="box2" style="display: flex; align-items: center;">
+                    <input id="radio2" name="group1" type="radio" style="margin-right: 10px;" >On the
+            
+                <!-- drop down 1 -->
+                    <select disabled id="monthDropDown1" class="monthDropDown" style="margin-left: 13px" >
+                        <option value="First">First</option>
+                        <option value="Second">Second</option>
+                        <option value="Third">Third</option>
+                        <option value="Fourth">Fourth</option>
+                        <option value="Last">Last</option>
+                    </select>
+            
+                <!-- drop down 2 -->
+                    <select disabled id="monthDropDown2" class="monthDropDown">
+                        <option value="Monday" style="width: px;">Monday</option>
+                        <option value="Tuesday" style="width: px;">Tuesday</option>
+                        <option value="Wednesday" style="width: px;">Wednesday</option>
+                        <option value="Thursday" style="width: px;">Thursday</option>
+                        <option value="Friday" style="width: px;">Friday</option>
+                        <option value="Saturday" style="width: px;">Saturday</option>
+                        <option value="Sunday" style="width: px;">Sunday</option>
+                    </select>
+                </div></label>
+            </div>
+
+            <div style="display: flex; justify-content: end; align-items: center; padding-right: 4px;">End</div>
+            <div><input id="endDateInput" type="date"></div>
+            <div></div>
+            <div><p id="selectedDays">Occurs every </p></div>
+        </div>
+        <!-- Grid End-->
+
+        <div id="cancel-save">
+            <button id="cancel">Cancel</button>
+            <button id="save">Save</button>
+        </div>
+    </div>
+
+    
+    <script src="setRec.js"></script>
+</body>
+</html>
