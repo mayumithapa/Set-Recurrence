@@ -4,7 +4,6 @@ body{
     display: flex;
     justify-content: center;
     height: 97vh;
-    
 }
 h1{
     padding: 0px;
@@ -19,9 +18,6 @@ h1{
     padding: 27px;
     border-radius: 8px;
     height: 340px;
-       
-    /* height: 370px;   */
-    /* change for month comp */
     width: 550px;
     align-self: center;
 }
@@ -29,9 +25,9 @@ h1{
     font-size: 14px;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    /* grid-template-rows: 30px 20px 74px 30px; */
+
     grid-template-rows: 30px 30px 30px 30px;
-    /* 30px 20px 74px 30px       change for month comp*/
+
     margin-top: 10px;
     gap: 10px;
     row-gap: 25px;
@@ -67,13 +63,9 @@ p{
     border-radius: 50%;
     border: none;
     background-color: white;
-    /* rgb(91, 95, 199) */
     height: 32px;
     width: 32px;
 }
-/* .days:hover{
-    background-color: rgb(206, 205, 205);
-} */
 
 input{
     height: 32px;
